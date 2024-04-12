@@ -1,0 +1,98 @@
+:root {
+  --dark-blue: hsl(218, 23%, 16%);
+  --light-geryish-blue: hsl(217, 19%, 24%);
+  --grayish-blue: hsl(217, 19%, 38%);
+  --neon-green: hsl(150, 100%, 66%);
+  --light-cyan: hsl(193, 38%, 86%);
+  --cursor-poiner: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html body {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.container {
+  background-color: var(--dark-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.advice-container {
+  background-color: var(--light-geryish-blue);
+  border-radius: 15px;
+  padding: 45px 55px 45px 55px;
+  height: 400px;
+  width: 700px;
+  text-align: center;
+  position: relative;
+}
+
+.advice_no {
+  text-align: center;
+  color: var(--neon-green);
+  letter-spacing: 5px;
+}
+
+.advice {
+  color: var(--light-cyan);
+  font-weight: 800;
+  font-size: 23px;
+  letter-spacing: 2px;
+  line-height: 40px;
+  margin-top: 70px;
+}
+
+.icon-div {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+
+.btn {
+  border-radius: 50px;
+  position: absolute;
+  background-color: var(--neon-green);
+  border: 1px solid var(--neon-green);
+  bottom: -30px;
+  left: 46%;
+  padding: 15px;
+}
+
+.btn:hover {
+  cursor: pointer;
+  box-shadow: 2px 2px 5px hsl(150, 100%, 66%), -2px -2px 5px hsl(150, 100%, 66%),
+    2px -2px 5px hsl(150, 100%, 66%), -2px 2px 5px hsl(150, 100%, 66%);
+}
+
+@media screen and (max-width: 600px) {
+  html body {
+    height: 100%;
+    width: 100%;
+  }
+  .container {
+    background-color: var(--dark-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .advice-container {
+    background-color: var(--light-geryish-blue);
+    border-radius: 15px;
+    padding: 45px 55px 45px 55px;
+    height: 70%;
+    width: 80%;
+    text-align: center;
+    position: relative;
+  }
+}
